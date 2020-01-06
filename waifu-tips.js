@@ -239,7 +239,7 @@ function initWidget(waifuPath = "/waifu-tips.json", apiPath = "") {
 			}, 0);
 		}
 	});
-	if (localStorage.getItem("waifu-display") && Date.now() - localStorage.getItem("waifu-display") <= 86400000) {
+	if (localStorage.getItem("waifu-display") && Date.now() - localStorage.getItem("waifu-display") <= 60) {
 		toggle.setAttribute("first-time", true);
 		setTimeout(() => {
 			toggle.classList.add("waifu-toggle-active");
